@@ -5,7 +5,7 @@ FROM netflixoss/java:8
 #------------------------------------------------
 
 RUN  mkdir -p /opt/selenium \
-    && wget --no-verbose http://selenium-release.storage.googleapis.com/3.10/selenium-server-standalone-3.10.0.jar \
+    && wget --no-verbose http://selenium-release.storage.googleapis.com/3.141.59/selenium-server-standalone-3.141.59.jar \
     -O /opt/selenium/selenium-server-standalone.jar
 
 RUN useradd seluser --shell /bin/bash --create-home \
